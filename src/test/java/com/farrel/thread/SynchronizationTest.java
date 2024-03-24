@@ -6,7 +6,7 @@ public class SynchronizationTest {
 
     @Test
     void counter() throws InterruptedException {
-        SynchronizedCounter counter = new SynchronizedCounter();
+        CounterSynchronized counter = new CounterSynchronized();
 
         Runnable runnable = () -> {
             for (int i = 0; i < 1_000_000; i++) {
@@ -38,7 +38,7 @@ public class SynchronizationTest {
 
     @Test
     void counter2() throws InterruptedException {
-        SynchronizedCounter counter = new SynchronizedCounter();
+        CounterSynchronized counter = new CounterSynchronized();
 
         Runnable runnable = () -> {
             for (int i = 0; i < 1_000_000; i++) {

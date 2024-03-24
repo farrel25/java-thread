@@ -1,6 +1,6 @@
 package com.farrel.thread;
 
-public class SynchronizedCounter {
+public class CounterSynchronized {
 
     private Long value = 0L;
 
